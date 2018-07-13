@@ -37,7 +37,7 @@ beforeEach(async () => {
     gas:'1000000'
   });
   [prescriptionAddress] = await factory.methods.getDeployedPrescription().call();
-  console.log('JRTRRTRTR',prescriptionAddress);
+  // console.log('JRTRRTRTR',prescriptionAddress);
   prescription = await new web3.eth.Contract(
     JSON.parse(compiledPrescription.interface),
     prescriptionAddress
