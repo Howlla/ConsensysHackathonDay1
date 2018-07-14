@@ -1,0 +1,37 @@
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    /* padding: 0 24px; */
+    cursor: pointer;
+	transition: color .3s;
+	/* float: left; */
+}
+  
+.trigger:hover {
+    color: #1890ff;
+}
+
+.logOutDiv {
+    transition: color .3s;
+}
+
+.logOut:hover {
+    color: #1890ff;
+}
+
+.logoutDiv:hover {
+    cursor: pointer;
+    color: #1890ff;
+}
+
+/* .ant-layout-sider-children .logo {
+    height: 32px;
+    background: rgb(255, 255, 255);
+    margin: 16px;
+} */
+
+
+/* a {
+    color: #fff;  
+} */

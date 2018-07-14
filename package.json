@@ -1,19 +1,24 @@
 {
-  "name": "iitd",
-  "version": "1.0.0",
-  "description": "Hackathon 2018",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "patient-prescription-management",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "antd": "^3.6.6",
+    "axios": "^0.18.0",
     "fs-extra": "^6.0.1",
     "ganache-cli": "^6.1.6",
     "mocha": "^5.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
     "solc": "^0.4.24",
     "truffle-hdwallet-provider": "0.0.5",
     "web3": "^1.0.0-beta.26"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

@@ -27,6 +27,7 @@ beforeEach(async () => {
   });
 
   factoryAddress = await authority.methods.registered_doctors(accounts[1]).call();
+  
   factory = await new web3.eth.Contract(
     JSON.parse(compiledFactory.interface),
     factoryAddress

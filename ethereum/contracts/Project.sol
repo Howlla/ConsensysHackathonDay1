@@ -1,7 +1,7 @@
 pragma solidity ^0.4.17;
 
 contract AuthorityContract{
-    address private manager;   // address of the authority that will manage the contract
+    address public manager;   // address of the authority that will manage the contract
     mapping(address => address) public registered_doctors;
     mapping(address => bool) private registered_pharmacies;
 
@@ -98,7 +98,7 @@ contract Prescription {
             if(white_list[i]==msg.sender)
              can_see=true;
         }
-        require(can_see);
+        require(can_see || msg.sender==patient);
         return ipfs_link;
     }
     function approve(uint index) public restricted {
